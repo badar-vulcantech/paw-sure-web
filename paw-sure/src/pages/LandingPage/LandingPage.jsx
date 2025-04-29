@@ -5,7 +5,7 @@ import FavoriteBreeds from "./FavoriteBreeds";
 import Footer from "../../components/ui/Footer/Footer";
 import Services from "./Services";
 import OurPuppyBreeds from "./OurPuppyBreeds";
-import BrowseAllPuppiesBtn from "../../components/ui/buttons/BrowseAllPuppiesBtn";
+import BrowseAllPuppies from "./BrowseAllPuppies";
 const LandingPage = () => {
   return (
     <div>
@@ -14,7 +14,7 @@ const LandingPage = () => {
       <FavoriteBreeds />
       <Services />
       <OurPuppyBreeds />
-      <BrowseAllPuppiesBtn />
+      <BrowseAllPuppies />
       <Footer />
     </div>
   );

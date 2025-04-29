@@ -8,19 +8,19 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-        className="absolute top-24 left-0 w-full h-full object-cover"
+        className="absolute inset-0 top-18 md:top-24 w-full h-full object-cover"
       >
         <source src={heroSectionVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
-        <h1 className="text-white text-4xl font-bold w-1/3">
+        <h1 className="text-white text-4xl font-bold w-11/12 md:w-1/3">
           Find The Perfect,{" "}
           <span className="text-[#09B29F]"> Healthy Puppy</span> {' '}
           <span className="text-[28px]">From PawSure</span>
         </h1>
-        <div className="relative w-full max-w-xl mt-8 flex z-10 ">
+        <div className="relative w-11/12 md:w-full max-w-xl mt-8 flex z-10">
           <input
             type="text"
             placeholder="Search by breed of puppy name"

@@ -20,8 +20,8 @@ const OurPuppyBreeds = () => {
             src={item.image}
             alt="Background Card"
             className={`h-48 w-72 rounded-xl shadow-md object-cover ${
-              index === 1 ? "mt-8" : ""
-            } ${index === 2 && "hidden md:block"}`}
+              index === 1 ? "mt-8 hidden lg:block" : ""
+            } ${index === 2 && "hidden md:block"} `}
           />
         ))}
       </div>
@@ -34,6 +34,7 @@ const OurPuppyBreeds = () => {
           purus euismod at.
         </p>
       </div>
+
     </div>
   );
 };

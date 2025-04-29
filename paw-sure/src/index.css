@@ -7,3 +7,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Custom green pagination bullets */
+.custom-swiper .swiper-pagination-bullet {
+  background-color: #b6b7b7;
+  opacity: 0.5;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background-color: #09B29F; 
+  opacity: 1;
+}

@@ -1,7 +1,9 @@
 import React from "react";
 import Logo from "../../../assets/images/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const navigation = useNavigate();
   return (
     <footer className="w-full bg-gradient-to-t from-gray-200 to-gray-100 py-8 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-8">
@@ -72,9 +74,9 @@ export default function Footer() {
         </div>
       </div>
       {/* Bottom row */}
-      <div className="max-w-7xl mx-auto mt-12  my-6 flex flex-col md:flex-row items-start justify-around gap-4">
-        <div className="flex items-center gap-2">
-          <img src={Logo} alt="Logo" className="h-12 w-auto" />
+      <div className="max-w-7xl mx-auto mt-12 my-6 flex flex-col items-center md:flex-row md:items-start md:justify-around gap-4">
+        <div onClick={()=>navigation('/')} className="mr-12">
+          <img src={Logo} alt="Logo" className="w-18 h-auto" />
         </div>
         <div className="text-neutral-700 text-lg text-left w-64">
           <span className="font-bold">The Perfect Puppy Match</span>
